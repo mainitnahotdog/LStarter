@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/test"
+    android:orientation="vertical"
+    tools:context=".LearnGreeting">
+
+    <Button
+        android:id="@+id/btn_back1"
+        style="@style/button_back"
+        android:layout_gravity="left"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/title_text"
+        android:padding="5dp"
+        android:text="15 tips for learning American Sign Language"
+        android:textSize="25dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_desc">
+
+        <LinearLayout style="@style/layout_linear_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_1"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="1. Learn the 100 most important vocabulary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="To start communicating, you need to know some basic vocabulary. That’s why at the beginning of your ASL journey you should aim to learn the essentials, like “hello”, “thanks” or “please”.  "
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--tip2-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_2"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="2. Learn the finger alphabet"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="It is vital to learn the ASL alphabet when you start out with American Sign Language. Knowing the alphabet will give you the skill to sign any word. So, if you forget a sign you can simply spell it. "
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--tip3-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_3"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="3. Learn to sign the phrase “How do I sign … ?”"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="As soon as you know the finger alphabet and the phrase “How do I sign … (spelled word)?”, you can ask for any sign. So, let’s learn this phrase."
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip4-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_4"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="4. Conversation!"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Don’t wait before getting into conversations and start to sign right away! As soon as you know some basic words and the alphabet don’t hesitate to approach other ASL users. Making conversation is key to learning any language. Many language learners make the mistake and wait too long before communicating with other people."
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip5-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_5"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="5. Find a practice buddy or join the local Deaf community"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="To make conversation you need people to interact with. Most cities or towns have a local Deaf community. Visit meetups and surround yourself with people who know how to sign.  "
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--tip6-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_6"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="6. Don’t worry about understanding everything"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Lots of language learners are afraid that they will not understand everything when communicating with other people. "
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip7-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_7"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="7. Learn phrases you frequently use"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Learn some key phrases which are important to you. This will make you more fluent, especially when making small talk!"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip8-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_8"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="8. Be aware of an unsteady learning curve"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Keep in mind that everyone has bad days. On some days you might feel like you’ve forgotten all signs and you’re not making any progress. Do not let such emotions take away your motivation. The learning progress is not linear like most people believe. It’s often bumpy, but in the long run, your skills are rising."
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip9-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_9"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="9. Build great habits"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Keep in mind that consistency is more important than intensity. Learn ASL every day! You don’t have to learn for an hour each day. 5-10 minutes are enough to improve your skills. Just try to keep it rolling! "
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip10-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_10"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="10. Make mistakes! Be childlike. Don’t worry about perfection"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="One reason why children generally learn faster than adults is that they are not afraid to make mistakes. Making mistakes is one of the most important parts of the learning process. Still, most of us adults are self-conscious and feel like they should not make mistakes. Don’t be afraid to make mistakes. Act more childlike and learn faster. Nobody will judge you.  "
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip11-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_11"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="11. Use the Pareto principle"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Did you hear about the Pareto principle also known as 80/20 rule? The Pareto principle says, that roughly 80% of the effects come from 20% of the causes. Transferred to language learning this means that 20% of things you learn contribute to 80% of your total ASL improvement. In other words, only a small proportion of your learning input is driving a large part of your learning progress."
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip12-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_12"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="12. Find your favorite YouTuber"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Immerse yourself in ASL. Go on social media and find your favorite channels. Being surrounded by ASL will boost your progress and make learning ASL more fun!"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--tip13-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_13"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="13. Track your progress"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Tracking your progress will motivate you to keep learning ASL. Making weekly videos of yourself while signing is a great way to track your progress. You could keep the videos for yourself to view them some months later or share them on social media. They are a great memory of your ASL journey."
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--tip14-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_14"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="14. Set goals"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="You might get more motivation by setting daily, weekly, or monthly goals."
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tip15-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tip_15"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="15. Keep it fun and remember your “why”"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="This is the most important advice. Keep learning ASL fun! If you do not enjoy learning ASL you will most probably lose motivation and stop learning."
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--tiplink-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tips_link"
+                style="@style/card"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:gravity="left"
+                            android:text="Source: https://www.lingvano.com/asl/blog/15-tips-for-learning-american-sign-language/"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

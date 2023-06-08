@@ -19,7 +19,7 @@ public class LearnGreeting extends AppCompatActivity {
         back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LearnGreeting.this, MainActivity.class);
+                Intent intent = new Intent(LearnGreeting.this, ASLActivity.class);
                 startActivity(intent);
             }
         });

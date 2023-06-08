@@ -4,13 +4,13 @@ plugins {
 
 android {
     namespace 'com.sklerbidi.handsealstrainer'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.sklerbidi.handsealstrainer"
         minSdk 21
         //noinspection ExpiredTargetSdkVersion
-        targetSdk 30
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 

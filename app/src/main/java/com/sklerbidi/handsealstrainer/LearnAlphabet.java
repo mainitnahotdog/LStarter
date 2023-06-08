@@ -21,7 +21,7 @@ public class LearnAlphabet extends AppCompatActivity {
         back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LearnAlphabet.this, MainActivity.class);
+                Intent intent = new Intent(LearnAlphabet.this, ASLActivity.class);
                 startActivity(intent);
             }
         });

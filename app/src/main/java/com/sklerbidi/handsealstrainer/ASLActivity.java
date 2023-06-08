@@ -18,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.opencv.android.OpenCVLoader;
 
-public class MainActivity extends AppCompatActivity {
+public class ASLActivity extends AppCompatActivity {
 
     static {
         if(OpenCVLoader.initDebug()){
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_asl);
         findView();
 
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //REALTIME ALPHABET
-                startActivity(new Intent(MainActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             }
         });
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         alpha_btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //REALTIME NUMBER
-                startActivity(new Intent(MainActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(ASLActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
 
             }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //REALTIME GREETINGS
-                startActivity(new Intent(MainActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                startActivity(new Intent(ASLActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
             }
         });
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         learn_alphabet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LearnAlphabet.class);
+                Intent intent = new Intent(ASLActivity.this, LearnAlphabet.class);
                 startActivity(intent);
             }
         });
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         learn_number.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LearnNumber.class);
+                Intent intent = new Intent(ASLActivity.this, LearnNumber.class);
                 startActivity(intent);
             }
         });
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         learn_greetings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LearnGreeting.class);
+                Intent intent = new Intent(ASLActivity.this, LearnGreeting.class);
                 startActivity(intent);
             }
         });
