@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/test"
+    tools:context=".LearnNumber">
+
+    <Button
+        style="@style/button_back"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_back1"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:padding="0dp"
+        style="@style/title_text"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="NUMBERS" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_desc">
+
+        <LinearLayout style="@style/layout_linear_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_0"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num0">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_1"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num1">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_2"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num2">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_3"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num3">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_4"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="4" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num4">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_5"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num5">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_6"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="6" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num6">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_7"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="7" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num7">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_8"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="8" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num8">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/number_9"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/card_title_text_large"
+                            android:layout_marginStart="10dp"
+                            android:text="9" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/num9">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
