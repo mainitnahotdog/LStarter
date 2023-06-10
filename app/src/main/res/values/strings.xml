@@ -3,4 +3,6 @@
     <string name="english_alphabet_desc">Learn ASL english alphabet consisting of 26 letters from a-z</string>
     <string name="numbers">Learn ASL numbers from 0-10 </string>
     <string name="greetings">Learn ASL common greetings phrases like \"thank you\" and \"hello\"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

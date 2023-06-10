@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MiniGames.GuessTheSign.GuessTheSignGame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="20dp"
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/img_guess">
+
+        <LinearLayout
+            android:id="@+id/layout_header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="MODE: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="EASY"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_question_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_header1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="20/20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/tv_correct_answers_num"
+            app:layout_constraintTop_toBottomOf="@id/layout_header1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Correct Answers: "/>
+
+        <TextView
+            android:id="@+id/tv_correct_answers_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_header1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_guess"
+        android:src="@drawable/greeting_thankyou"
+        app:layout_constraintTop_toBottomOf="@id/tv_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_timer"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        app:layout_constraintTop_toBottomOf="@id/img_guess"
+        app:layout_constraintBottom_toTopOf="@id/layout_options"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"/>
+
+    <LinearLayout
+        android:id="@+id/layout_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer"
+        app:layout_constraintBottom_toTopOf="@id/layout_footer"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="A"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="B"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option3"
+                android:layout_width="wrap_content"
+                android:text="D"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option4"
+                android:layout_width="wrap_content"
+                android:text="E"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option5"
+                android:layout_width="match_parent"
+                android:text="F"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option6"
+                android:layout_width="match_parent"
+                android:text="G"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option7"
+                android:layout_width="match_parent"
+                android:text="H"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_option8"
+                android:layout_width="match_parent"
+                android:text="I"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:id="@+id/layout_footer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:text="QUIT"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_restart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="RESTART"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
