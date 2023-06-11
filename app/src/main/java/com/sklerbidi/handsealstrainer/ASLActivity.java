@@ -51,79 +51,45 @@ public class ASLActivity extends AppCompatActivity {
         fromBottom = AnimationUtils.loadAnimation(this, R.anim.from_bottom_anim);
         toBottom = AnimationUtils.loadAnimation(this, R.anim.to_bottom_anim);
 
-        alpha_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //REALTIME ALPHABET
-                startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        alpha_btn.setOnClickListener(view -> {
+            //REALTIME ALPHABET
+            startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
-            }
         });
 
-        alpha_btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        alpha_btn2.setOnClickListener(view -> startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)));
 
-            }
+        num_btn.setOnClickListener(view -> {
+            //REALTIME NUMBER
+            startActivity(new Intent(ASLActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
+
         });
 
-        num_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //REALTIME NUMBER
-                startActivity(new Intent(ASLActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        greet_btn.setOnClickListener(view -> {
+            //REALTIME GREETINGS
+            startActivity(new Intent(ASLActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
-
-            }
         });
 
-        greet_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //REALTIME GREETINGS
-                startActivity(new Intent(ASLActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
-
-            }
+        learn_alphabet.setOnClickListener(view -> {
+            Intent intent = new Intent(ASLActivity.this, LearnAlphabet.class);
+            startActivity(intent);
         });
 
-        learn_alphabet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ASLActivity.this, LearnAlphabet.class);
-                startActivity(intent);
-            }
+        learn_number.setOnClickListener(view -> {
+            Intent intent = new Intent(ASLActivity.this, LearnNumber.class);
+            startActivity(intent);
         });
 
-        learn_number.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ASLActivity.this, LearnNumber.class);
-                startActivity(intent);
-            }
+        learn_greetings.setOnClickListener(view -> {
+            Intent intent = new Intent(ASLActivity.this, LearnGreeting.class);
+            startActivity(intent);
         });
 
-        learn_greetings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ASLActivity.this, LearnGreeting.class);
-                startActivity(intent);
-            }
-        });
+        camera_btn.setOnClickListener(view -> onCameraButtonClicked());
 
-        camera_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onCameraButtonClicked();
-            }
-        });
-
-        overlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onCameraButtonClicked();
-            }
-        });
+        overlay.setOnClickListener(view -> onCameraButtonClicked());
     }
 
     @Override
@@ -131,23 +97,7 @@ public class ASLActivity extends AppCompatActivity {
         if(clicked){
             onCameraButtonClicked();
         }else{
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Exit");
-            builder.setMessage("Are you sure");
-            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    finish();
-                }
-            });
-            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                }
-            });
-            AlertDialog dialog = builder.create();
-            dialog.show();
+            super.onBackPressed();
         }
     }
 

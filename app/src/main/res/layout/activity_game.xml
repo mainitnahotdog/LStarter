@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MiniGames.GameActivity">
-
-
+    tools:context=".MiniGames.GameActivity"
+    android:background="@color/test">
 
     <LinearLayout
         android:padding="30dp"
@@ -19,7 +18,8 @@
             android:layout_height="match_parent"
             android:textAlignment="center"
             android:textSize="40sp"
-            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textColor="#191919"
             android:layout_marginBottom="40dp"
             android:text="MINI GAMES"/>
 
@@ -44,7 +44,7 @@
                     <TextView
                         style="@style/card_title_text"
                         android:textSize="25sp"
-                        android:text="GUESS THE LETTER" />
+                        android:text="GUESS THE SIGN" />
 
 
                 </LinearLayout>
@@ -62,7 +62,7 @@
                         android:layout_gravity="center"
                         android:background="@drawable/image_border"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/pic1">
+                        android:src="@drawable/logo_guess_the_sign">
 
                     </ImageView>
 
@@ -111,7 +111,7 @@
                         android:layout_gravity="center"
                         android:background="@drawable/image_border"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/pic1">
+                        android:src="@drawable/logo_tic_tac_sign">
 
                     </ImageView>
 
@@ -121,54 +121,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_asl_rpg"
-            style="@style/card_games">
-
-            <LinearLayout
-                style="@style/layout_linear_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="2">
-
-                <LinearLayout
-                    style="@style/layout_linear_vertical"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:layout_weight="1.3"
-                    android:paddingStart="20dp">
-
-                    <TextView
-                        style="@style/card_title_text"
-                        android:textSize="25sp"
-                        android:text="GESTURES OF DESTINY" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/layout_linear_vertical"
-                    android:layout_width="0dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="0.7"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="100dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/image_border"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/pic1">
-
-                    </ImageView>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

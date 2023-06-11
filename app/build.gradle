@@ -63,6 +63,7 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-task-vision:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-task-text:0.1.0'
+    implementation 'nl.dionsegijn:konfetti:1.2.2'
 
     implementation project(path: ':openCVLibrary3413')
 

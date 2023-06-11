@@ -17,32 +17,12 @@
 
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo">
-
-    </ImageView>
-
-    <TextView
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="130dp"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/title_text"
-        android:textColor="@color/black"
-        style="@style/title_text"
-        android:text="SIGN LANGUAGE STARTER" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/title_text">
+        android:layout_marginTop="30dp">
+
         <LinearLayout style="@style/layout_linear_vertical">
 
             <androidx.cardview.widget.CardView
