@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btn_tips.setOnClickListener(v -> {
+            Intent intent = new Intent(this, InformationActivity.class);
+            startActivity(intent);
+
 
         });
 

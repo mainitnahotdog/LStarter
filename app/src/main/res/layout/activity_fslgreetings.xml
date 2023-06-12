@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/test"
+    tools:context=".LearnGreeting">
+
+    <Button
+        style="@style/button_back"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_back1"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:padding="0dp"
+        style="@style/title_text"
+        android:textSize="25dp"
+        android:text="FSL GREETINGS" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_desc">
+
+        <LinearLayout style="@style/layout_linear_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_please"
+                android:layout_marginTop="20dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="PLEASE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_please">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_hello"
+                android:layout_marginTop="20dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="HELLO" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_hello">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_bad"
+                android:layout_marginTop="20dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="BAD" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_bad">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_good"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="GOOD" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_good">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_goodafternnon"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="GOOD AFTERNOON" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_goodafternoon">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_goodbye"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="GOODBYE" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_goodbye">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_goodmorning"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="GOOD MORNING" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_goodmorning">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_goodevening"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="GOOD EVENING" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_goodevening">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_happy"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="HAPPY" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_happy">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fsl_thankyou"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                style="@style/card">
+
+                <LinearLayout
+                    style="@style/layout_linear_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:textAlignment="center"
+                            style="@style/card_title_text_medium"
+                            android:layout_marginStart="10dp"
+                            android:text="THANK YOU" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_linear_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_border"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fsl_thankyou">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
