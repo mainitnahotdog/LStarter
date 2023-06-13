@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btn_fsl.setOnClickListener(v -> {
-
+            Intent intent = new Intent(this, FSLActivity.class);
+            startActivity(intent);
         });
 
         btn_mini_games.setOnClickListener(v -> {
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         fab_info.setOnClickListener(v -> {
-
+            Intent intent = new Intent(this, Information2Activity.class);
+            startActivity(intent);
         });
 
     }

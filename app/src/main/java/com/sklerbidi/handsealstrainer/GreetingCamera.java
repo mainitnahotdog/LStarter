@@ -45,7 +45,6 @@ public class GreetingCamera extends Activity implements CameraBridgeViewBase.CvC
                 default:
                 {
                     super.onManagerConnected(status);
-
                 }
                 break;
             }

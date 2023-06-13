@@ -3,8 +3,6 @@ package com.sklerbidi.handsealstrainer;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,7 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.opencv.android.OpenCVLoader;
 
-public class ASLActivity extends AppCompatActivity {
+public class FSLActivity extends AppCompatActivity {
 
     static {
         if(OpenCVLoader.initDebug()){
@@ -42,7 +40,8 @@ public class ASLActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asl);
+        setContentView(R.layout.activity_fsl);
+
         findView();
 
 
@@ -53,42 +52,45 @@ public class ASLActivity extends AppCompatActivity {
 
         alpha_btn.setOnClickListener(view -> {
             //REALTIME ALPHABET
-            startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            startActivity(new Intent(FSLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
         });
 
-        alpha_btn2.setOnClickListener(view -> startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)));
+        alpha_btn2.setOnClickListener(view -> startActivity(new Intent(FSLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)));
 
         num_btn.setOnClickListener(view -> {
             //REALTIME NUMBER
-            startActivity(new Intent(ASLActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            startActivity(new Intent(FSLActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
 
         });
 
         greet_btn.setOnClickListener(view -> {
             //REALTIME GREETINGS
-            startActivity(new Intent(ASLActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            startActivity(new Intent(FSLActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
         });
 
         learn_alphabet.setOnClickListener(view -> {
-            Intent intent = new Intent(ASLActivity.this, LearnAlphabet.class);
+            Intent intent = new Intent(FSLActivity.this, LearnAlphabet.class);
             startActivity(intent);
         });
 
         learn_number.setOnClickListener(view -> {
-            Intent intent = new Intent(ASLActivity.this, LearnNumber.class);
+            Intent intent = new Intent(FSLActivity.this, LearnNumber.class);
             startActivity(intent);
         });
 
         learn_greetings.setOnClickListener(view -> {
-            Intent intent = new Intent(ASLActivity.this, FSLGreetings.class);
+            Intent intent = new Intent(FSLActivity.this, LearnGreeting.class);
             startActivity(intent);
         });
 
         camera_btn.setOnClickListener(view -> onCameraButtonClicked());
 
         overlay.setOnClickListener(view -> onCameraButtonClicked());
+
+
     }
 
     @Override

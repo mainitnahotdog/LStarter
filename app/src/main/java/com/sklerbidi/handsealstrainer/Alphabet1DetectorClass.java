@@ -24,6 +24,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -43,7 +44,10 @@ public class    Alphabet1DetectorClass {
     private int width = 0;
     private int Classification_Input_Size = 0;
 
-    Alphabet1DetectorClass(AssetManager assetManager, String modelPath, String labelPath, int inputSize, String classification_model, int classification_input_size) throws IOException {
+    private String letterToDetect = null;
+
+    Alphabet1DetectorClass(AssetManager assetManager, String modelPath, String labelPath, int inputSize, String classification_model, int classification_input_size, String letter) throws IOException {
+        letterToDetect = letter;
         INPUT_SIZE = inputSize;
         Classification_Input_Size = classification_input_size;
         Interpreter.Options options = new Interpreter.Options();
@@ -55,8 +59,6 @@ public class    Alphabet1DetectorClass {
         Interpreter.Options option2 = new Interpreter.Options();
         option2.setNumThreads(2);
         interpreter2 = new Interpreter(loadModelFile(assetManager, classification_model), option2);
-
-
     }
 
     private List<String> loadLabelList(AssetManager assetManager, String labelPath) throws IOException {
@@ -82,7 +84,6 @@ public class    Alphabet1DetectorClass {
 
 
     public Mat recognizeImage(Mat mat_image) {
-
 
         Mat rotated_mat_image = new Mat();
 
@@ -164,7 +165,7 @@ public class    Alphabet1DetectorClass {
 
                 Log.d("objectDetection", "output_class_value:  "+output_class_value);
 
-                String sign_val=get_alphabets(output_class_value[0][0]);
+                String sign_val=get_alphabets(output_class_value[0][0], letterToDetect);
 
                 // draw rectangle in Original frame //  starting point    // ending point of box  // color of box       thickness
                 Imgproc.rectangle(rotated_mat_image, new Point(x1, y1), new Point(x2, y2), new Scalar(0, 255, 0, 255), 2);
@@ -179,62 +180,56 @@ public class    Alphabet1DetectorClass {
         return mat_image;
     }
 
-    private String get_alphabets(float sig_v) {
-        String val = "";
-        if (sig_v >= -0.5 & sig_v < 0.5) {
-            val = "A";
-        } else if (sig_v >= 0.5 & sig_v < 1.5) {
-            val = "B";
-        } else if (sig_v >= 1.5 & sig_v < 2.5) {
-            val = "C";
-        } else if (sig_v >= 2.5 & sig_v < 3.5) {
-            val = "D";
-        } else if (sig_v >= 3.5 & sig_v < 4.5) {
-            val = "E";
-        } else if (sig_v >= 4.5 & sig_v < 5.5) {
-            val = "F";
-        } else if (sig_v >= 5.5 & sig_v < 6.5) {
-            val = "G";
-        } else if (sig_v >= 6.5 & sig_v < 7.5) {
-            val = "H";
-        } else if (sig_v >= 7.5 & sig_v < 8.5) {
-            val = "I";
-        } else if (sig_v >= 8.5 & sig_v < 9.5) {
-            val = "J";
-        } else if (sig_v >= 9.5 & sig_v < 10.5) {
-            val = "K";
-        } else if (sig_v >= 10.5 & sig_v < 11.5) {
-            val = "L";
-        } else if (sig_v >= 11.5 & sig_v < 12.5) {
-            val = "M";
-        } else if (sig_v >= 12.5 & sig_v < 13.5) {
-            val = "N";
-        } else if (sig_v >= 13.5 & sig_v < 14.5) {
-            val = "O";
-        } else if (sig_v >= 14.5 & sig_v < 15.5) {
-            val = "P";
-        } else if (sig_v >= 15.5 & sig_v < 16.5) {
-            val = "Q";
-        } else if (sig_v >= 16.5 & sig_v < 17.5) {
-            val = "R";
-        } else if (sig_v >= 17.5 & sig_v < 18.5) {
-            val = "S";
-        } else if (sig_v >= 18.5 & sig_v < 19.5) {
-            val = "T";
-        } else if (sig_v >= 19.5 & sig_v < 20.5) {
-            val = "U";
-        } else if (sig_v >= 20.5 & sig_v < 21.5) {
-            val = "V";
-        } else if (sig_v >= 21.5 & sig_v < 22.5) {
-            val = "W";
-        } else if (sig_v >= 22.5 & sig_v < 23.5) {
-            val = "X";
-        } else if (sig_v >= 23.5 & sig_v < 24.5) {
-            val = "Y";
+    private String get_alphabets(float sig_v, String letterToGet) {
+        Map<Float, String> rangeToLetterMap = new HashMap<>();
+        rangeToLetterMap.put(-0.5f, "A");
+        rangeToLetterMap.put(0.5f, "B");
+        rangeToLetterMap.put(1.5f, "C");
+        rangeToLetterMap.put(2.5f, "D");
+        rangeToLetterMap.put(3.5f, "E");
+        rangeToLetterMap.put(4.5f, "F");
+        rangeToLetterMap.put(5.5f, "G");
+        rangeToLetterMap.put(6.5f, "H");
+        rangeToLetterMap.put(7.5f, "I");
+        rangeToLetterMap.put(8.5f, "J");
+        rangeToLetterMap.put(9.5f, "K");
+        rangeToLetterMap.put(10.5f, "L");
+        rangeToLetterMap.put(11.5f, "M");
+        rangeToLetterMap.put(12.5f, "N");
+        rangeToLetterMap.put(13.5f, "O");
+        rangeToLetterMap.put(14.5f, "P");
+        rangeToLetterMap.put(15.5f, "Q");
+        rangeToLetterMap.put(16.5f, "R");
+        rangeToLetterMap.put(17.5f, "S");
+        rangeToLetterMap.put(18.5f, "T");
+        rangeToLetterMap.put(19.5f, "U");
+        rangeToLetterMap.put(20.5f, "V");
+        rangeToLetterMap.put(21.5f, "W");
+        rangeToLetterMap.put(22.5f, "X");
+        rangeToLetterMap.put(23.5f, "Y");
 
+        String val = "";
+        if (letterToGet != null) {
+            for (Map.Entry<Float, String> entry : rangeToLetterMap.entrySet()) {
+                float rangeStart = entry.getKey();
+                float rangeEnd = rangeStart + 1.0f;
+                if (sig_v >= rangeStart && sig_v < rangeEnd && letterToGet.equalsIgnoreCase(entry.getValue())) {
+                    val = entry.getValue();
+                    break;
+                }
+            }
+        } else {
+            for (Map.Entry<Float, String> entry : rangeToLetterMap.entrySet()) {
+                float rangeStart = entry.getKey();
+                float rangeEnd = rangeStart + 1.0f;
+                if (sig_v >= rangeStart && sig_v < rangeEnd) {
+                    val = entry.getValue();
+                    break;
+                }
+            }
         }
-            return val;
-        }
+        return val;
+    }
 
 
     private ByteBuffer convertBitmapToByteBuffer(Bitmap bitmap) {

@@ -2,6 +2,7 @@ package com.sklerbidi.handsealstrainer;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -54,6 +55,14 @@ public class Alphabet1Camera extends Activity implements CameraBridgeViewBase.Cv
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = getIntent();
+        String letter = null;
+
+        if(intent != null){
+            letter = intent.getStringExtra("letter");
+        }
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
@@ -70,7 +79,7 @@ public class Alphabet1Camera extends Activity implements CameraBridgeViewBase.Cv
         mOpenCvCameraView.setCvCameraViewListener(this);
         try{
 
-            Alphabet1DetectorClass =new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"sign_language_model.tflite",96);
+            Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"sign_language_model.tflite",96, letter);
             Log.d("MainActivity","Model is successfully loaded");
         }
         catch (IOException e){
