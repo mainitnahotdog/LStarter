@@ -181,54 +181,193 @@ public class    Alphabet1DetectorClass {
     }
 
     private String get_alphabets(float sig_v, String letterToGet) {
-        Map<Float, String> rangeToLetterMap = new HashMap<>();
-        rangeToLetterMap.put(-0.5f, "A");
-        rangeToLetterMap.put(0.5f, "B");
-        rangeToLetterMap.put(1.5f, "C");
-        rangeToLetterMap.put(2.5f, "D");
-        rangeToLetterMap.put(3.5f, "E");
-        rangeToLetterMap.put(4.5f, "F");
-        rangeToLetterMap.put(5.5f, "G");
-        rangeToLetterMap.put(6.5f, "H");
-        rangeToLetterMap.put(7.5f, "I");
-        rangeToLetterMap.put(8.5f, "J");
-        rangeToLetterMap.put(9.5f, "K");
-        rangeToLetterMap.put(10.5f, "L");
-        rangeToLetterMap.put(11.5f, "M");
-        rangeToLetterMap.put(12.5f, "N");
-        rangeToLetterMap.put(13.5f, "O");
-        rangeToLetterMap.put(14.5f, "P");
-        rangeToLetterMap.put(15.5f, "Q");
-        rangeToLetterMap.put(16.5f, "R");
-        rangeToLetterMap.put(17.5f, "S");
-        rangeToLetterMap.put(18.5f, "T");
-        rangeToLetterMap.put(19.5f, "U");
-        rangeToLetterMap.put(20.5f, "V");
-        rangeToLetterMap.put(21.5f, "W");
-        rangeToLetterMap.put(22.5f, "X");
-        rangeToLetterMap.put(23.5f, "Y");
 
         String val = "";
-        if (letterToGet != null) {
-            for (Map.Entry<Float, String> entry : rangeToLetterMap.entrySet()) {
-                float rangeStart = entry.getKey();
-                float rangeEnd = rangeStart + 1.0f;
-                if (sig_v >= rangeStart && sig_v < rangeEnd && letterToGet.equalsIgnoreCase(entry.getValue())) {
-                    val = entry.getValue();
+
+        if(letterToGet != null){
+            switch (letterToGet) {
+                case "a":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "A";
+                    }
                     break;
-                }
+                case "b":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "B";
+                    }
+                    break;
+                case "c":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "C";
+                    }
+                    break;
+                case "d":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "D";
+                    }
+                    break;
+                case "e":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "E";
+                    }
+                    break;
+                case "f":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "F";
+                    }
+                    break;
+                case "g":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "G";
+                    }
+                    break;
+                case "h":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "H";
+                    }
+                    break;
+                case "i":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "I";
+                    }
+                    break;
+                case "j":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "J";
+                    }
+                    break;
+                case "k":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "K";
+                    }
+                    break;
+                case "l":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "L";
+                    }
+                    break;
+                case "m":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "M";
+                    }
+                    break;
+                case "n":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "N";
+                    }
+                    break;
+                case "o":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "O";
+                    }
+                    break;
+                case "p":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "P";
+                    }
+                    break;
+                case "q":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "Q";
+                    }
+                    break;
+                case "r":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "R";
+                    }
+                    break;
+                case "s":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "S";
+                    }
+                    break;
+                case "t":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "T";
+                    }
+                    break;
+                case "u":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "U";
+                    }
+                    break;
+                case "v":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "V";
+                    }
+                    break;
+                case "w":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "W";
+                    }
+                    break;
+                case "x":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "X";
+                    }
+                    break;
+                case "y":
+                    if (sig_v >= -0.5f && sig_v < 0.5f) {
+                        val = "Y";
+                    }
+                    break;
             }
-        } else {
-            for (Map.Entry<Float, String> entry : rangeToLetterMap.entrySet()) {
-                float rangeStart = entry.getKey();
-                float rangeEnd = rangeStart + 1.0f;
-                if (sig_v >= rangeStart && sig_v < rangeEnd) {
-                    val = entry.getValue();
-                    break;
-                }
+        }else{
+            if (sig_v >= -0.5f && sig_v < 0.5f) {
+                val = "A";
+            } else if (sig_v >= 0.5f && sig_v < 1.5f) {
+                val = "B";
+            } else if (sig_v >= 1.5f && sig_v < 2.5f) {
+                val = "C";
+            } else if (sig_v >= 2.5f && sig_v < 3.5f) {
+                val = "D";
+            } else if (sig_v >= 3.5f && sig_v < 4.5f) {
+                val = "E";
+            } else if (sig_v >= 4.5f && sig_v < 5.5f) {
+                val = "F";
+            } else if (sig_v >= 5.5f && sig_v < 6.5f) {
+                val = "G";
+            } else if (sig_v >= 6.5f && sig_v < 7.5f) {
+                val = "H";
+            } else if (sig_v >= 7.5f && sig_v < 8.5f) {
+                val = "I";
+            } else if (sig_v >= 8.5f && sig_v < 9.5f) {
+                val = "J";
+            } else if (sig_v >= 9.5f && sig_v < 10.5f) {
+                val = "K";
+            } else if (sig_v >= 10.5f && sig_v < 11.5f) {
+                val = "L";
+            } else if (sig_v >= 11.5f && sig_v < 12.5f) {
+                val = "M";
+            } else if (sig_v >= 12.5f && sig_v < 13.5f) {
+                val = "N";
+            } else if (sig_v >= 13.5f && sig_v < 14.5f) {
+                val = "O";
+            } else if (sig_v >= 14.5f && sig_v < 15.5f) {
+                val = "P";
+            } else if (sig_v >= 15.5f && sig_v < 16.5f) {
+                val = "Q";
+            } else if (sig_v >= 16.5f && sig_v < 17.5f) {
+                val = "R";
+            } else if (sig_v >= 17.5f && sig_v < 18.5f) {
+                val = "S";
+            } else if (sig_v >= 18.5f && sig_v < 19.5f) {
+                val = "T";
+            } else if (sig_v >= 19.5f && sig_v < 20.5f) {
+                val = "U";
+            } else if (sig_v >= 20.5f && sig_v < 21.5f) {
+                val = "V";
+            } else if (sig_v >= 21.5f && sig_v < 22.5f) {
+                val = "W";
+            } else if (sig_v >= 22.5f && sig_v < 23.5f) {
+                val = "X";
+            } else if (sig_v >= 23.5f && sig_v < 24.5f) {
+                val = "Y";
             }
         }
+
         return val;
+
     }
 
 
