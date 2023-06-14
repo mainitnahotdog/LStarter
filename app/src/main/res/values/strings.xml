@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Sign Language Starter</string>
     <string name="english_alphabet_desc">Learn ASL english alphabet consisting of 26 letters from a-z</string>
-    <string name="numbers">Learn ASL numbers from 0-10 </string>
+    <string name="numbers">Learn ASL numbers from 0-9 </string>
     <string name="greetings">Learn ASL common greetings phrases like \"thank you\" and \"hello\"</string>
 
     <string name="english_alphabet_desc_fsl">Learn FSL english alphabet consisting of 26 letters from a-z</string>
-    <string name="numbers_fsl">Learn FSL numbers from 0-10 </string>
+    <string name="numbers_fsl">Learn FSL numbers from 0-9 </string>
     <string name="greetings_fsl">Learn FSL common greetings phrases like \"thank you\" and \"hello\"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

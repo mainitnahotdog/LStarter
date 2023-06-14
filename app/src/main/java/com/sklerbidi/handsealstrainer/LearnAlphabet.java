@@ -31,8 +31,7 @@ public class LearnAlphabet extends AppCompatActivity {
         }
 
         back_btn.setOnClickListener(view -> {
-            Intent intent = new Intent(LearnAlphabet.this, ASLActivity.class);
-            startActivity(intent);
+            finish();
         });
     }
 

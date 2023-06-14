@@ -82,7 +82,7 @@ public class ASLActivity extends AppCompatActivity {
         });
 
         learn_greetings.setOnClickListener(view -> {
-            Intent intent = new Intent(ASLActivity.this, FSLGreetings.class);
+            Intent intent = new Intent(ASLActivity.this, LearnGreeting.class);
             startActivity(intent);
         });
 

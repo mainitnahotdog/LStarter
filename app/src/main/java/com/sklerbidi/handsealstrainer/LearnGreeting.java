@@ -17,8 +17,7 @@ public class LearnGreeting extends AppCompatActivity {
         back_btn = findViewById(R.id.btn_back1);
 
         back_btn.setOnClickListener(view -> {
-            Intent intent = new Intent(LearnGreeting.this, ASLActivity.class);
-            startActivity(intent);
+            finish();
         });
     }
 }

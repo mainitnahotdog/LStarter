@@ -82,7 +82,7 @@ public class FSLActivity extends AppCompatActivity {
         });
 
         learn_greetings.setOnClickListener(view -> {
-            Intent intent = new Intent(FSLActivity.this, LearnGreeting.class);
+            Intent intent = new Intent(FSLActivity.this, FSLGreetings.class);
             startActivity(intent);
         });
 
