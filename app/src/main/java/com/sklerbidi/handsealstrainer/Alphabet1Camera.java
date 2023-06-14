@@ -78,8 +78,90 @@ public class Alphabet1Camera extends Activity implements CameraBridgeViewBase.Cv
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
         try{
-
-            Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"sign_language_model.tflite",96, letter);
+            if (letter != null) {
+                switch (letter.toLowerCase()) {
+                    case "a":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"A.tflite",96, letter);
+                        break;
+                    case "b":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"B.tflite",96, letter);
+                        break;
+                    case "c":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"C.tflite",96, letter);
+                        break;
+                    case "d":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"D.tflite",96, letter);
+                        break;
+                    case "e":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"E.tflite",96, letter);
+                        break;
+                    case "f":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"F.tflite",96, letter);
+                        break;
+                    case "g":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"G.tflite",96, letter);
+                        break;
+                    case "h":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"H.tflite",96, letter);
+                        break;
+                    case "i":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"I.tflite",96, letter);
+                        break;
+                    case "j":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"J.tflite",96, letter);
+                        break;
+                    case "k":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"K.tflite",96, letter);
+                        break;
+                    case "l":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"L.tflite",96, letter);
+                        break;
+                    case "m":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"M.tflite",96, letter);
+                        break;
+                    case "n":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"N.tflite",96, letter);
+                        break;
+                    case "o":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"O.tflite",96, letter);
+                        break;
+                    case "p":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"P.tflite",96, letter);
+                        break;
+                    case "q":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"Q.tflite",96, letter);
+                        break;
+                    case "r":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"R.tflite",96, letter);
+                        break;
+                    case "s":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"S.tflite",96, letter);
+                        break;
+                    case "t":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"T.tflite",96, letter);
+                        break;
+                    case "u":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"U.tflite",96, letter);
+                        break;
+                    case "v":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"V.tflite",96, letter);
+                        break;
+                    case "w":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"W.tflite",96, letter);
+                        break;
+                    case "x":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"X.tflite",96, letter);
+                        break;
+                    case "y":
+                        Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"Y.tflite",96, letter);
+                        break;
+                    default:
+                        // Handle the case where the letter is not recognized
+                        break;
+                }
+            } else {
+                Alphabet1DetectorClass = new Alphabet1DetectorClass(getAssets(),"hand_model.tflite","custom_label.txt",300,"sign_language_model.tflite",96, null);
+            }
             Log.d("MainActivity","Model is successfully loaded");
         }
         catch (IOException e){
