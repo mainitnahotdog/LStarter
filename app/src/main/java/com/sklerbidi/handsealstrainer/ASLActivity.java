@@ -29,10 +29,10 @@ public class ASLActivity extends AppCompatActivity {
         }
     }
 
-    FloatingActionButton alpha_btn, alpha_btn2,num_btn, greet_btn, camera_btn;
+    FloatingActionButton alpha_btn, alpha_btn2, camera_btn;
     FrameLayout overlay;
     CardView learn_alphabet, learn_number, learn_greetings;
-    private TextView alpha_tv, alpha_tv2,num_tv, greet_tv, realtime_tv;
+    private TextView alpha_tv, alpha_tv2, realtime_tv;
     private boolean clicked = false;
     private Animation rotateOpen;
     private Animation rotateClose;
@@ -58,18 +58,6 @@ public class ASLActivity extends AppCompatActivity {
         });
 
         alpha_btn2.setOnClickListener(view -> startActivity(new Intent(ASLActivity.this, Alphabet1Camera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP)));
-
-        num_btn.setOnClickListener(view -> {
-            //REALTIME NUMBER
-            startActivity(new Intent(ASLActivity.this,NumberCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
-
-
-        });
-
-        greet_btn.setOnClickListener(view -> {
-            //REALTIME GREETINGS
-            startActivity(new Intent(ASLActivity.this,GreetingCamera.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
-        });
 
         learn_alphabet.setOnClickListener(view -> {
             Intent intent = new Intent(ASLActivity.this, LearnAlphabet.class);
@@ -111,23 +99,15 @@ public class ASLActivity extends AppCompatActivity {
         if(!clicked){
             alpha_btn2.setVisibility(View.VISIBLE);
             alpha_btn.setVisibility(View.VISIBLE);
-            num_btn.setVisibility(View.VISIBLE);
-            greet_btn.setVisibility(View.VISIBLE);
             alpha_tv2.setVisibility(View.VISIBLE);
             alpha_tv.setVisibility(View.VISIBLE);
-            num_tv.setVisibility(View.VISIBLE);
-            greet_tv.setVisibility(View.VISIBLE);
             realtime_tv.setVisibility(View.VISIBLE);
             overlay.setVisibility(View.VISIBLE);
         }else{
             alpha_btn.setVisibility(View.GONE);
             alpha_btn.setVisibility(View.GONE);
-            num_btn.setVisibility(View.GONE);
-            greet_btn.setVisibility(View.GONE);
             alpha_tv2.setVisibility(View.GONE);
             alpha_tv.setVisibility(View.GONE);
-            num_tv.setVisibility(View.GONE);
-            greet_tv.setVisibility(View.GONE);
             realtime_tv.setVisibility(View.GONE);
             overlay.setVisibility(View.GONE);
         }
@@ -137,24 +117,16 @@ public class ASLActivity extends AppCompatActivity {
         if(!clicked){
             alpha_btn2.startAnimation(fromBottom);
             alpha_btn.startAnimation(fromBottom);
-            num_btn.startAnimation(fromBottom);
-            greet_btn.startAnimation(fromBottom);
             alpha_tv2.startAnimation(fromBottom);
             alpha_tv.startAnimation(fromBottom);
-            num_tv.startAnimation(fromBottom);
-            greet_tv.startAnimation(fromBottom);
             camera_btn.startAnimation(rotateOpen);
             realtime_tv.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
             overlay.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
         }else{
             alpha_btn2.startAnimation(toBottom);
             alpha_btn.startAnimation(toBottom);
-            num_btn.startAnimation(toBottom);
-            greet_btn.startAnimation(toBottom);
             alpha_tv2.startAnimation(toBottom);
             alpha_tv.startAnimation(toBottom);
-            num_tv.startAnimation(toBottom);
-            greet_tv.startAnimation(toBottom);
             camera_btn.startAnimation(rotateClose);
             realtime_tv.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
             overlay.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
@@ -165,12 +137,8 @@ public class ASLActivity extends AppCompatActivity {
         overlay = findViewById(R.id.overlay);
         alpha_btn = findViewById(R.id.realtime_alphabet_btn);
         alpha_btn2 = findViewById(R.id.realtime_alphabet2_btn);
-        num_btn = findViewById(R.id.realtime_number_btn);
-        greet_btn = findViewById(R.id.realtime_gesture_btn);
         alpha_tv = findViewById(R.id.alphabet_text);
         alpha_tv2 = findViewById(R.id.alphabet_text2);
-        greet_tv = findViewById(R.id.gesture_text);
-        num_tv = findViewById(R.id.number_text);
         camera_btn = findViewById(R.id.camera_btn);
         realtime_tv = findViewById(R.id.realtime_text);
         learn_alphabet = findViewById(R.id.learn_alphabet);

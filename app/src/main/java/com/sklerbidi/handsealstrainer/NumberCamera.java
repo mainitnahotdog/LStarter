@@ -28,6 +28,7 @@ public class NumberCamera extends Activity implements CameraBridgeViewBase.CvCam
     private Mat mGray;
     private CameraBridgeViewBase mOpenCvCameraView;
     private NumberDetectorClass NumberDetectorClass;
+
     private BaseLoaderCallback mLoaderCallback =new BaseLoaderCallback(this) {
         @Override
         public void onManagerConnected(int status) {
@@ -120,8 +121,8 @@ public class NumberCamera extends Activity implements CameraBridgeViewBase.CvCam
         mRgba=inputFrame.rgba();
         mGray=inputFrame.gray();
 
-        Mat out=new Mat();
-        out=NumberDetectorClass.recognizeImage(mRgba);
+        Mat out = new Mat();
+        out = NumberDetectorClass.recognizeImage(mRgba);
 
         return out;
     }

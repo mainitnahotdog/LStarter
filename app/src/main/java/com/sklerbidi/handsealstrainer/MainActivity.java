@@ -40,12 +40,10 @@ public class MainActivity extends AppCompatActivity {
         btn_tips.setOnClickListener(v -> {
             Intent intent = new Intent(this, InformationActivity.class);
             startActivity(intent);
-
-
         });
 
         btn_exit.setOnClickListener(v -> {
-
+            System.exit(0);
         });
 
         fab_info.setOnClickListener(v -> {
@@ -63,4 +61,5 @@ public class MainActivity extends AppCompatActivity {
         btn_exit = findViewById(R.id.btn_exit);
         fab_info = findViewById(R.id.fab_info);
     }
+
 }

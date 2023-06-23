@@ -21,4 +21,9 @@ public class Information2Activity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
