@@ -28,6 +28,81 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".Camera.YCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.XCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.WCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.VCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.UCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.TCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.SCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.RCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.QCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.PCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.OCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.NCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.MCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.LCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.KCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.JCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.ICamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.HCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.GCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.FCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.ECamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.DCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.CCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.BCamera"
+            android:exported="false" />
+        <activity
+            android:name=".Camera.ACamera"
+            android:exported="false" />
+        <activity
             android:name=".FSLActivity"
             android:exported="false">
             <meta-data
